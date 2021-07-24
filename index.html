@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <title>GlassCards</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <div class="header">
+            <h1>GLASS CARDS</h1>
+        </div>
+            
+
+        <div class="card" data-tilt>
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eius culpa quaerat! Et, 
+                    suscipit ut distinctio minus est laboriosam
+                    praesentium. Facere maxime libero earum vero culpa.
+                    Nisi beatae iusto sit.</p>
+                <a href="#">See more!</a>
+            </div>
+        </div>
+
+        <div class="card" data-tilt>
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eius culpa quaerat! Et, 
+                    suscipit ut distinctio minus est laboriosam
+                    praesentium. Facere maxime libero earum vero culpa.
+                    Nisi beatae iusto sit.</p>
+                <a href="#">See more!</a>
+            </div>
+        </div>
+
+        <div class="card" data-tilt>
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eius culpa quaerat! Et, 
+                    suscipit ut distinctio minus est laboriosam
+                    praesentium. Facere maxime libero earum vero culpa.
+                    Nisi beatae iusto sit.</p>
+                <a href="#">See more!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="tilt.jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.card').tilt({
+                glare: true,
+                maxGlare: .4           
+            })
+        })
+    </script>
+    
+</body>
+</html>
